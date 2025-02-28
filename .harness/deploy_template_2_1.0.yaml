@@ -25,12 +25,6 @@ template:
               template:
                 templateRef: shell_lucas
                 versionLabel: "1.0"
-          - step:
-              name: shell
-              identifier: shell
-              template:
-                templateRef: shell_script_template
-                versionLabel: "1.0"
         rollbackSteps: []
     failureStrategies:
       - onFailure:
