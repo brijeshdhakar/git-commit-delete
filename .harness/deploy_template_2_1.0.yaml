@@ -20,8 +20,8 @@ template:
       execution:
         steps:
           - step:
-              name: shell2
-              identifier: shell2
+              name: shell11
+              identifier: shell11
               template:
                 templateRef: shell_lucas
                 versionLabel: "1.0"
