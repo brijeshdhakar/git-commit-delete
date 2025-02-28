@@ -20,10 +20,10 @@ template:
       execution:
         steps:
           - step:
-              name: shell11
-              identifier: shell11
+              name: dfsa
+              identifier: dfsa
               template:
-                templateRef: shell_lucas
+                templateRef: k8srolling
                 versionLabel: "1.0"
         rollbackSteps: []
     failureStrategies:
