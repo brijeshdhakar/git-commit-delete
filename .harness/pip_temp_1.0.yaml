@@ -9,12 +9,6 @@ template:
   spec:
     stages:
       - stage:
-          name: ci1
-          identifier: ci1
-          template:
-            templateRef: build_lucas
-            versionLabel: "1.0"
-      - stage:
           name: cd1
           identifier: cd1
           tags: {}
