@@ -25,7 +25,7 @@ template:
               name: k8srolling
               identifier: k8srolling
               template:
-                templateRef: k8srolling
+                templateRef: k8s_lucas
                 versionLabel: "1.0"
         rollbackSteps:
           - step:
