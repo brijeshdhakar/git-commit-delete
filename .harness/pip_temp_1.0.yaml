@@ -12,7 +12,7 @@ template:
           name: ci1
           identifier: ci1
           template:
-            templateRef: build_stage
+            templateRef: build_lucas
             versionLabel: "1.0"
       - stage:
           name: cd1
