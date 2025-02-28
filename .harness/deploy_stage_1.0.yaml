@@ -22,10 +22,10 @@ template:
       execution:
         steps:
           - step:
-              name: k8srolling
-              identifier: k8srolling
+              name: das
+              identifier: das
               template:
-                templateRef: k8s_lucas
+                templateRef: k8srolling
                 versionLabel: "1.0"
         rollbackSteps:
           - step:
