@@ -1,0 +1,1 @@
+key: <+secrets.getValue("hashicorpvault://VAULTPIPE22283/harness/test-inpath#value")>
