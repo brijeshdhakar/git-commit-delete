@@ -9,7 +9,7 @@ service:
         - name: variable1
           type: String
           description: ""
-          required: false
+          required: true
           value: <+input>
       artifacts:
         primary:
