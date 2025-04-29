@@ -3,3 +3,12 @@ service:
   identifier: remote_service_2
   orgIdentifier: default
   projectIdentifier: Brijesh
+  serviceDefinition:
+    spec:
+      variables:
+        - name: var1
+          type: String
+          description: ""
+          required: true
+          value: <+input>
+    type: Kubernetes
