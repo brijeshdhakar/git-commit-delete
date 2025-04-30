@@ -31,9 +31,15 @@ pipeline:
             type: String
             value: dmon
   variables:
-    - name: test
+    - name: branch
       type: String
-      description: test
+      value: <+input>.default(master)
+    - name: gitTag
+      type: String
+      value: <+input>
+    - name: gitSHA
+      type: String
+      value: <+input>
+    - name: changeRequest
+      type: String
       value: <+input>.regex((?:\b(?:CHG|INC)\d{8}\b)?)
-  allowStageExecutions: true
-  timeout: 3h
