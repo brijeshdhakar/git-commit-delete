@@ -6,23 +6,34 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: cs
-        identifier: cs
-        description: ""
+        name: DMON TF
+        identifier: dmon_tf
         type: Custom
         spec:
           execution:
             steps:
               - step:
-                  type: Wait
-                  name: Wait_1
-                  identifier: Wait_1
+                  type: HarnessApproval
+                  name: Approval
+                  identifier: Approval
                   spec:
-                    duration: <+input>
-              - step:
-                  type: Wait
-                  name: Wait_2
-                  identifier: Wait_2
-                  spec:
-                    duration: 20s
-        tags: {}
+                    approvalMessage: Please review the Plan step.
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      userGroups:
+                        - account.CoreEngEngineer
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                    approverInputs: []
+                  timeout: 1h
+        variables:
+          - name: accountName
+            type: String
+            value: dmon
+  variables:
+    - name: test
+      type: String
+      description: test
+      value: <+input>
+  allowStageExecutions: true
+  timeout: 3h
