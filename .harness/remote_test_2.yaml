@@ -34,6 +34,6 @@ pipeline:
     - name: test
       type: String
       description: test
-      value: <+input>
+      value: <+input>.regex((?:\b(?:CHG|INC)\d{8}\b)?)
   allowStageExecutions: true
   timeout: 3h
