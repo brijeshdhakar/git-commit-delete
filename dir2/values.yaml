@@ -5,8 +5,8 @@ image: <+artifact.image>
 dockercfg: <+artifact.imagePullSecret>
 
 createNamespace: true
-#namespace: ${infra.kubernetes.namespace}
 namespace: <+infra.namespace>
+key1: <+stage.variables.TF_SERVICE_RUNTIME_ROLE>
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
