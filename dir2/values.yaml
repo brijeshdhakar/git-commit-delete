@@ -7,7 +7,7 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 key1: <+stage.variables.TF_SERVICE_RUNTIME_ROLE>
-key2: <+serviceVariables.abcd>
+
 
 
 # Service Type allow you to specify what kind of service you want.
