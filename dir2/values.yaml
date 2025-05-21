@@ -6,7 +6,7 @@ dockercfg: <+artifact.imagePullSecret>
 
 createNamespace: true
 namespace: <+infra.namespace>
-key1: <+stage.variables.TF_SERVICE_RUNTIME_ROLE>
+key1: <+stage.variables.IN_CI>
 key2: <+serviceVariables.abcd>
 
 
