@@ -11,6 +11,21 @@ service:
           description: ""
           required: true
           value: <+input>
+        - name: var2
+          type: String
+          description: Some Desc
+          required: false
+          value: <+input>
+        - name: Var3
+          type: String
+          description: Some Desc3
+          required: true
+          value: <+input>
+        - name: Var4
+          type: String
+          description: ""
+          required: false
+          value: <+input>
       artifacts:
         primary:
           primaryArtifactRef: <+input>
