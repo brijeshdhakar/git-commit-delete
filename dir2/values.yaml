@@ -6,8 +6,6 @@ dockercfg: <+artifact.imagePullSecret>
 
 createNamespace: true
 namespace: <+infra.namespace>
-key1: <+stage.variables.IN_CI>
-key2: <+serviceVariables.abcd>
 
 
 # Service Type allow you to specify what kind of service you want.
