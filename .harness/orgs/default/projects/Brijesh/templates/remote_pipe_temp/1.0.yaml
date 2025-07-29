@@ -3,7 +3,6 @@ template:
   identifier: remote_pipe_temp
   versionLabel: "1.0"
   type: Pipeline
-  projectIdentifier: Brijesh
   orgIdentifier: default
   tags: {}
   spec:
