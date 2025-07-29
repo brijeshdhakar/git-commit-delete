@@ -4,6 +4,7 @@ template:
   versionLabel: "1.0"
   type: Pipeline
   orgIdentifier: default
+  projectIdentifier: Brijesh
   tags: {}
   spec:
     stages:
