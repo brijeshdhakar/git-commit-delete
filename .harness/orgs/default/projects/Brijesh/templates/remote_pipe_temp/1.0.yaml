@@ -4,14 +4,13 @@ template:
   versionLabel: "1.0"
   type: Pipeline
   orgIdentifier: default
-
   tags: {}
   spec:
     stages:
       - stage:
           name: cs
           identifier: cs
-          description: "some description"
+          description: some desc
           type: Custom
           spec:
             execution:
