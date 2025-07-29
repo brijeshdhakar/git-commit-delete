@@ -1,0 +1,25 @@
+template:
+  name: remote_pipe_temp
+  identifier: remote_pipe_temp
+  versionLabel: "1.0"
+  type: Pipeline
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: cs
+          identifier: cs
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
