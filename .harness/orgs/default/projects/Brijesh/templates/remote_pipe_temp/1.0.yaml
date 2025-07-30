@@ -10,7 +10,7 @@ template:
       - stage:
           name: cs
           identifier: cs
-          description: some desc
+          description: some descdfsa
           type: Custom
           spec:
             execution:
