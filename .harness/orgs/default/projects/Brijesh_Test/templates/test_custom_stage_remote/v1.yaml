@@ -1,0 +1,27 @@
+template:
+  name: test_custom_stage_remote
+  identifier: test_custom_stage_remote
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: Brijesh_Test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo HI
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
