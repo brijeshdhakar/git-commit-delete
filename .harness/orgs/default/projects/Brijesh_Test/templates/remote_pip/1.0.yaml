@@ -61,6 +61,6 @@ template:
     properties:
       ci:
         codebase:
-          connectorRef: samplesr
+          connectorRef: org.GitHubRepoForGitOpsAutomationTest
           build: <+input>
           sparseCheckout: []
