@@ -31,3 +31,35 @@ template:
                       outputVariables: []
                     timeout: 10m
           tags: {}
+      - stage:
+          name: build
+          identifier: build
+          description: ""
+          type: CI
+          spec:
+            cloneCodebase: true
+            caching:
+              enabled: true
+              override: false
+            execution:
+              steps:
+                - step:
+                    type: Run
+                    name: Run_1
+                    identifier: Run_1
+                    spec:
+                      connectorRef: tarundocker
+                      image: library/nginx
+                      shell: Sh
+                      command: echo HI
+            platform:
+              os: Linux
+              arch: Arm64
+            runtime:
+              type: Cloud
+              spec: {}
+    properties:
+      ci:
+        codebase:
+          connectorRef: git_connector
+          build: <+input>
