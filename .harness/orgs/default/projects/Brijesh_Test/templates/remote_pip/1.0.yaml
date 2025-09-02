@@ -61,5 +61,6 @@ template:
     properties:
       ci:
         codebase:
-          connectorRef: git_connector
+          connectorRef: samplesr
           build: <+input>
+          sparseCheckout: []
