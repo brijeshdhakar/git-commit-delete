@@ -57,7 +57,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: exit 1
+                          script: echo "non-default"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
@@ -70,5 +70,5 @@ template:
                       templateInputs:
                         type: Http
                         spec:
-                          method: "<+input>.allowedValues(GET,POST)"
+                          method: <+input>.allowedValues(GET,POST)
           tags: {}
