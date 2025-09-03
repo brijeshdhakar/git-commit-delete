@@ -30,6 +30,12 @@ template:
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
+                    failureStrategies:
+                      - onFailure:
+                          errors:
+                            - AllErrors
+                          action:
+                            type: MarkAsSuccess
               rollbackSteps: []
             serviceDependencies: []
           tags: {}
