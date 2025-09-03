@@ -55,4 +55,14 @@ template:
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
+                - step:
+                    name: cdsasdcf
+                    identifier: cdsasdcf
+                    template:
+                      templateRef: http_remote_temp
+                      versionLabel: "1.0"
+                      templateInputs:
+                        type: Http
+                        spec:
+                          method: <+input>.allowedValues(GET,POST)
           tags: {}
