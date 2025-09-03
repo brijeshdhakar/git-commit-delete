@@ -57,7 +57,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: exit 1
+                          script: echo "non-default"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
