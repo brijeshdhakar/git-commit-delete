@@ -1,13 +1,8 @@
 environment:
   name: remote_environment
   identifier: remote_environment
+  description: ""
   tags: {}
   type: PreProduction
   orgIdentifier: default
   projectIdentifier: Brijesh
-  variables:
-    - name: var1
-      type: String
-      value: <+input>.allowedValues("val1")
-      description: ""
-      required: false
