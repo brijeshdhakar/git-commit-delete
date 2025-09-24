@@ -1,0 +1,37 @@
+pipeline:
+  name: remote-non-def
+  identifier: remotenondef
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: dafdsaf
+        identifier: dafdsaf
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 1
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
+    - stage:
+        name: abc
+        identifier: abc
+        tags: {}
+        template:
+          templateRef: remote_stage
+          versionLabel: "1.0"
