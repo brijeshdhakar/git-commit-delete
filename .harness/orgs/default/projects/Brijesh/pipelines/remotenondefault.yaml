@@ -1,0 +1,14 @@
+pipeline:
+  name: remote-non-default
+  identifier: remotenondefault
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: abc
+        identifier: abc
+        tags: {}
+        template:
+          templateRef: stage_non_default
+          versionLabel: "1.0"
