@@ -1,0 +1,19 @@
+template:
+  name: stage_non_default
+  identifier: stage_non_default
+  versionLabel: "1.0"
+  type: Stage
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 10m
