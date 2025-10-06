@@ -6,4 +6,4 @@ service:
     spec: {}
   gitOpsEnabled: false
   orgIdentifier: default
-  projectIdentifier: Mock_Incident
+  projectIdentifier: Mock_Incident_2
