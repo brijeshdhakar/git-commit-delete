@@ -1,0 +1,27 @@
+template:
+  name: remote_stage
+  identifier: remote_stage
+  versionLabel: "1.0"
+  type: Stage
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: "echo \"remote stage in default branch: main\""
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m

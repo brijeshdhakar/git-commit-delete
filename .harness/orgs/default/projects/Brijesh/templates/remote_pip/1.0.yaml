@@ -26,7 +26,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo "non-default-branch"
+                          script: echo "default branch running"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
@@ -71,7 +71,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo "non-default"
+                          script: echo "default"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
