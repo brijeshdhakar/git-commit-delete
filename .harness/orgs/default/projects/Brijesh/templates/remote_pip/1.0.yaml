@@ -36,6 +36,20 @@ template:
                             - AllErrors
                           action:
                             type: MarkAsSuccess
+                - step:
+                    type: ShellScript
+                    name: ShellScript_2
+                    identifier: ShellScript_2
+                    spec:
+                      shell: Bash
+                      executionTarget: {}
+                      source:
+                        type: Inline
+                        spec:
+                          script: exit 1
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
               rollbackSteps: []
             serviceDependencies: []
           tags: {}
