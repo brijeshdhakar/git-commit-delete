@@ -6,6 +6,13 @@ pipeline:
   tags: {}
   stages:
     - stage:
+        name: abc
+        identifier: abc
+        tags: {}
+        template:
+          templateRef: remote_stage
+          versionLabel: "1.0"
+    - stage:
         name: cs
         identifier: cs
         description: ""
