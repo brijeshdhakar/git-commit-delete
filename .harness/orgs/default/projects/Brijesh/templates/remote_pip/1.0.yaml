@@ -26,7 +26,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo "default branch running"
+                          script: echo "default main branch running"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
