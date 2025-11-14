@@ -7,6 +7,8 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 
+someRandomKey: <+secrets.getValue("s1")>
+
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
