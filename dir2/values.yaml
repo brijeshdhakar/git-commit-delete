@@ -26,6 +26,6 @@ serviceTargetPort: 80
 env:
   config:
     key1: value1
-    SomeOtherKey: <+configFile.getAsString("F1")>
+    SomeOtherKey: <+execution.steps.ShellScript_1.output.outputVariables.outputVar1>
   secrets:
     key2: value2
