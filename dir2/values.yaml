@@ -7,7 +7,6 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 
-SomeOtherKey: <+pipeline.variables.var1>
 
 
 # Service Type allow you to specify what kind of service you want.
