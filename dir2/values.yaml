@@ -27,5 +27,6 @@ serviceTargetPort: 80
 env:
   config:
     key1: value1
+    SomeOtherKey: <+pipeline.variables.var1>
   secrets:
     key2: value2
