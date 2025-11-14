@@ -26,6 +26,6 @@ serviceTargetPort: 80
 env:
   config:
     key1: value1
-    SomeOtherKey: <+configFile.getAsString("F1")>
+    SomeOtherKey: <+configFile.getAsString("FFFF")>
   secrets:
     key2: value2
