@@ -8,6 +8,7 @@ createNamespace: true
 namespace: <+infra.namespace>
 
 someRandomKey: <+secrets.getValue("s1")>
+SomeOtherKey: <+pipeline.variables.var1>
 
 
 # Service Type allow you to specify what kind of service you want.
