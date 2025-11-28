@@ -5,20 +5,5 @@ pipeline:
   template:
     templateRef: remote_pip
     versionLabel: "1.0"
-    templateInputs:
-      stages:
-        - stage:
-            identifier: cssss
-            type: Custom
-            spec:
-              execution:
-                steps:
-                  - step:
-                      identifier: cdsasdcf
-                      template:
-                        templateInputs:
-                          type: Http
-                          spec:
-                            method: <+input>.allowedValues(GET,POST)
   projectIdentifier: Brijesh
   orgIdentifier: default
