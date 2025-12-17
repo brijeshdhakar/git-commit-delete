@@ -27,8 +27,8 @@ template:
                         type: Inline
                         spec:
                           script: |-
-                            echo "Main branch running"
                             echo <+variable.var12>
+                            echo "Main branch running"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
