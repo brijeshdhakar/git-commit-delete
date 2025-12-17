@@ -1,0 +1,9 @@
+pipeline:
+  name: temp_pie_remote
+  identifier: temp_pie_remote
+  tags: {}
+  template:
+    templateRef: remotepipe
+    versionLabel: "1.0"
+  projectIdentifier: Brijesh
+  orgIdentifier: default
