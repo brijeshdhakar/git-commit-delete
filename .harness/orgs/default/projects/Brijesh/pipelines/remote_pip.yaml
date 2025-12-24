@@ -23,7 +23,9 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo HI
+                        script: |-
+                          echo HI
+                          echo "Non default"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
