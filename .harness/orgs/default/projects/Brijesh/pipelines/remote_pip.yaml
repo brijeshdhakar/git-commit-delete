@@ -28,11 +28,23 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
-    - stage:
-        name: abcds
-        identifier: abcds
-        tags: {}
-        template:
-          templateRef: remote_stage
-          versionLabel: "1.0"
+    - parallel:
+        - stage:
+            name: abcds
+            identifier: abcds
+            tags: {}
+            template:
+              templateRef: remote_stage
+              versionLabel: "1.0"
+        - stage:
+            name: fdsadfs
+            identifier: fdsadfs
+            template:
+              templateRef: Build_stage
+              versionLabel: "1.0"
   allowStageExecutions: true
+  properties:
+    ci:
+      codebase:
+        connectorRef: BrijeshGitCon2
+        build: <+input>
