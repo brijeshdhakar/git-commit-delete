@@ -35,3 +35,4 @@ pipeline:
         template:
           templateRef: remote_stage
           versionLabel: "1.0"
+  allowStageExecutions: true
