@@ -61,4 +61,15 @@ pipeline:
                         outputVariables: []
                       timeout: 10m
             tags: {}
+        - stage:
+            name: build_2
+            identifier: build_2
+            template:
+              templateRef: Build_stage
+              versionLabel: "1.0"
   allowStageExecutions: true
+  properties:
+    ci:
+      codebase:
+        connectorRef: BrijeshGitCon2
+        build: <+input>
