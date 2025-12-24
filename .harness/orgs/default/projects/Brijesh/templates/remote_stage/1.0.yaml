@@ -21,7 +21,7 @@ template:
                 source:
                   type: Inline
                   spec:
-                    script: "echo \"remote stage in default branch: main\""
+                    script: echo "Non default"
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
@@ -35,7 +35,7 @@ template:
                 source:
                   type: Inline
                   spec:
-                    script: exit 1
+                    script: exit 2
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
