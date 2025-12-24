@@ -31,4 +31,4 @@ template:
               identifier: Run_1
               spec:
                 shell: Sh
-                command: echo "Default branch"
+                command: echo "Non Default branch running "
