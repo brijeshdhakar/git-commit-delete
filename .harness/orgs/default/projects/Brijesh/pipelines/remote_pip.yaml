@@ -1,0 +1,39 @@
+pipeline:
+  name: remote_pip
+  identifier: remote_pip
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cs
+        identifier: cs
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: |-
+                          echo HI
+                          echo "Non default"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
+    - stage:
+        name: abcds
+        identifier: abcds
+        tags: {}
+        template:
+          templateRef: remote_stage
+          versionLabel: "1.0"
