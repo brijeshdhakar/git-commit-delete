@@ -7,7 +7,7 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 
-invalidExpression: "wfcertifiedvirtual.wfcr.wellsfargo.net/<+serviceVariables.var1>"
+invalidExpression: "wfcertifiedvirtual.wfcr.wellsfargo.net/<+serviceVariables.var1>:<+serviceVariables.var1"
 
 
 # Service Type allow you to specify what kind of service you want.
