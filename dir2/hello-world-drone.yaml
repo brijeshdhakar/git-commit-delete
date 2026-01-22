@@ -2,7 +2,7 @@ kind: pipeline
 name: HelloWorld
 
 steps:
-  - name: hello-world-1
+  - name: hello-world-1-2
     image: alpine/git # Or any other suitable base image like alpine
     commands:
       - echo "Hello, world from Drone CI!"
