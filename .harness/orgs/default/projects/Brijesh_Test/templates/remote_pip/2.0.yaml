@@ -1,0 +1,33 @@
+template:
+  name: remote_pip
+  identifier: remote_pip
+  type: Pipeline
+  projectIdentifier: Brijesh_Test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: cs
+          identifier: cs
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: ShellScript_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      executionTarget: {}
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo HI
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
+          tags: {}
+  versionLabel: "2.0"
