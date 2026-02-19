@@ -1,7 +1,6 @@
 template:
   name: remote_pip
   identifier: remote_pip
-  versionLabel: "1.0"
   type: Pipeline
   projectIdentifier: Brijesh_Test
   orgIdentifier: default
@@ -26,8 +25,9 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo "non-defaut"
+                          script: echo HI
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
           tags: {}
+  versionLabel: "2.0"
