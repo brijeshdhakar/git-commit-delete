@@ -25,7 +25,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo HI
+                          script: echo "Stable and non-default"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
