@@ -4,6 +4,5 @@ pipeline:
   tags: {}
   template:
     templateRef: remote_pip
-    versionLabel: "1.0"
   projectIdentifier: Brijesh_Test
   orgIdentifier: default
