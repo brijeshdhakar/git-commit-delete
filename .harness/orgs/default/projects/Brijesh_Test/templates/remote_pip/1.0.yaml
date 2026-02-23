@@ -9,6 +9,19 @@ template:
   spec:
     stages:
       - stage:
+          name: cdfscdfsa
+          identifier: cdfscdfsa
+          tags: {}
+          template:
+            templateRef: stage_temp
+            versionLabel: V1
+            templateInputs:
+              type: Custom
+              variables:
+                - name: var1
+                  type: String
+                  value: das
+      - stage:
           name: cs
           identifier: cs
           description: ""
