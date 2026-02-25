@@ -44,3 +44,4 @@ template:
                       outputVariables: []
                     timeout: 10m
           tags: {}
+    delegateSelectors: <+input>
