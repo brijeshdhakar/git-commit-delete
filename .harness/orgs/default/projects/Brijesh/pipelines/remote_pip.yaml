@@ -3,7 +3,6 @@ pipeline:
   identifier: remote_pip
   projectIdentifier: Brijesh
   orgIdentifier: default
-  tags: {}
   stages:
     - stage:
         name: cs
