@@ -1,0 +1,30 @@
+pipeline:
+  name: remote-Pip-fdds
+  identifier: remotePipfdds
+  projectIdentifier: Brijesh_Test
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cdsa
+        identifier: cdsa
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: ls
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
