@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: csss
         identifier: csss
-        description: ""
+        description: des
         type: Custom
         spec:
           execution:
