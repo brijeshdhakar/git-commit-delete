@@ -1,0 +1,30 @@
+pipeline:
+  name: "remote pipeline "
+  identifier: remote_pipeline
+  tags: {}
+  projectIdentifier: Brijesh
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: csss
+        identifier: csss
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo HI
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
