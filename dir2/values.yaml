@@ -3,9 +3,6 @@ replicas: 1
 
 image: <+artifact.image>
 dockercfg: <+artifact.imagePullSecret>
-
-invalidKey: <+serviceVariables.invalidVarName>
-
 createNamespace: true
 namespace: <+infra.namespace>
 
