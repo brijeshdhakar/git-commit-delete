@@ -1,4 +1,4 @@
-name: test-deployment-brijesh
+name: test-deployment-brijesh-<+pipeline.sequenceId>
 replicas: 1
 
 image: <+artifact.image>
