@@ -8,9 +8,7 @@ namespace: <+infra.namespace>
 
 ternary_exp: <+<+expression.isResolved(<+stage.identifier>)>?<+stage.identifier.split("_")>:[]>
 
-ternary_exp_2: <+<+expression.isResolved(<+stage.invalids>)>?<+stage.identifier.split("_")>:[]>
 
-invalidKey: <+stage.identifierdasfsa>
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
