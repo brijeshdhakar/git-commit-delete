@@ -6,7 +6,7 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 
-ternary: <+<+expression.isResolved(<+stage.identifier>)>?<+stage.identifier.split('_')>:["ter"]>
+ternary: <+<+expression.isResolved(<+stage.identifier>)>?["ter"]:<+stage.identifier.split('_')>>
 
 
 
