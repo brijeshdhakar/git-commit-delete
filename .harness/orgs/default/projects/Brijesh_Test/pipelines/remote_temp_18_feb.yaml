@@ -1,0 +1,10 @@
+pipeline:
+  name: remote_temp
+  identifier: remote_temp
+  tags: {}
+  template:
+    templateRef: remote_pip
+    versionLabel: "1.0"
+    gitBranch: main
+  projectIdentifier: Brijesh_Test
+  orgIdentifier: default

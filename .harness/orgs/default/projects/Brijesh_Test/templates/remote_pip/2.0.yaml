@@ -1,26 +1,12 @@
 template:
   name: remote_pip
   identifier: remote_pip
-  versionLabel: "1.0"
   type: Pipeline
   projectIdentifier: Brijesh_Test
   orgIdentifier: default
   tags: {}
   spec:
     stages:
-      - stage:
-          name: cdfscdfsa
-          identifier: cdfscdfsa
-          tags: {}
-          template:
-            templateRef: stage_temp
-            versionLabel: V1
-            templateInputs:
-              type: Custom
-              variables:
-                - name: var1
-                  type: String
-                  value: das
       - stage:
           name: cs
           identifier: cs
@@ -39,9 +25,9 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo "non-defaut"
+                          script: echo "Stable and non-default"
                       environmentVariables: []
                       outputVariables: []
                     timeout: 10m
           tags: {}
-    delegateSelectors: <+input>
+  versionLabel: "2.0"
